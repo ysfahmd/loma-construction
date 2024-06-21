@@ -6,7 +6,7 @@ import AboutPage from './components/AboutPage/AboutPage';
 import ServicesPage from './components/ServicesPage/ServicesPage';
 import ContactPage from './components/ContactPage/ContactPage';
 
-function App() {
+export default function App() {
   return (
     <RouterProvider router={createBrowserRouter(createRoutesFromElements(
       <Route path='/' element={<Root />}>
@@ -17,6 +17,4 @@ function App() {
       </Route>
     ))} />
   );
-}
-
-export default App;
+};
