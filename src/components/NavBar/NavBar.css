@@ -1,0 +1,32 @@
+/* Styling for navbar block */
+#navbar {
+  width: 100vw;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: lightblue;
+}
+
+/* Styling for navbar items */
+#navbar > a {
+  margin: 0 50px 0 0;
+  padding: 10px 45px;
+  text-decoration: none;
+  background-color: navy;
+  color: lightgray;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: transform 0.5s;
+}
+
+/* Styling for actively selected navbar item */
+#navbar a.active {
+  font-weight: bold;
+}
+
+/* Styling for hover */
+#navbar a:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
