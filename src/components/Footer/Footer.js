@@ -3,6 +3,8 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <p>Footer for now!</p>
+    <footer id='footer-section'>
+      <p>Footer for now!</p>
+    </footer>
   )
 }
