@@ -10,7 +10,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 export default function App() {
   return (
     <RouterProvider router={createBrowserRouter(createRoutesFromElements(
-      <Route path='/' element={<Root />} >
+      <Route path='/' element={<Root />} errorElement={<ErrorPage />} >
         <Route path='*' element={<ErrorPage />} />
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
