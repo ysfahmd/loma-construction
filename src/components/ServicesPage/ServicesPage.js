@@ -1,4 +1,5 @@
 import React from 'react';
+import './ServicesPage.css';
 
 export default function ServicesPage() {
   return (
