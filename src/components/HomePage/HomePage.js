@@ -9,22 +9,24 @@ import store from '../../assets/store';
 
 export default function HomePage() {
   return (
-    <div>
+    <div id='home-page-container'>
       <main id='hero-section'>
         <h1>Loma Construction</h1>
         <p>We're a licensed GC company dedicated to helping you with all of your home renovation needs.</p>
-        <Link to='/services'><button>Learn more</button></Link>
+        <Link to='/services' id='hero-cta' className='button-animation'>Learn more</Link>
       </main>
+      <section id='meet-the-team-section'>
+        <h2>Meet the Team!</h2>
+				<div id='team-member-cards'>
+					{store.teamMembers.map(member => {
+						return <TeamMemberItem name={member.name} title={member.title} biography={member.biography} />
+					})}
+				</div>
+      </section>
       <section id='services-section'>
         <h2>What do we do?</h2>
         {store.services.map(service => {
           return <ServiceItem title={service.title} description={service.shortDesc} />
-        })}
-      </section>
-      <section id='meet-the-team-section'>
-        <h2>Meet the Team!</h2>
-        {store.teamMembers.map(member => {
-          return <TeamMemberItem name={member.name} title={member.title} biography={member.biography} />
         })}
       </section>
       <section id='contact-form-section'>

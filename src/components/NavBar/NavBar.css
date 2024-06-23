@@ -4,7 +4,7 @@
   padding: 30px 0px;
   display: flex;
   flex-direction: row-reverse;
-  background-color: lightblue;
+  background-color: darkseagreen;
 }
 
 /* Styling for navbar items */
@@ -12,10 +12,10 @@
   margin: 0 50px 0 0;
   padding: 10px 45px;
   text-decoration: none;
-  background-color: navy;
+  background-color: darkolivegreen;
   color: lightgray;
   font-size: 1.2rem;
-  border: 1px solid black;
+  border: 1px solid none;
   border-radius: 5px;
   transition: transform 0.5s;
 }
