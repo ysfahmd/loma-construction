@@ -1,0 +1,34 @@
+/* ------------------------- Styling for TEAM MEMBER ITEM div ------------------------- */
+
+#team-member-item {
+  padding: 40px 25px 65px;
+  margin: 10px 50px;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid olive;
+  border-radius: 5px;
+}
+
+#team-member-item > * {
+  margin: 10px 0;
+}
+
+#team-member-item > img {
+  width: 150px;
+  margin: 0 auto 20px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+}
+
+#team-member-item > h3 {
+
+}
+
+#team-member-item > h4 {
+  
+}
+
+#team-member-item > p {
+  
+}
